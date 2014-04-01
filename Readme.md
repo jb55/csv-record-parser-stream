@@ -16,7 +16,6 @@
 ```js
 var csv = require('csv-parse')
 var fs = require('fs');
-var parser = require('csv-record-parser')
 var record = require('csv-record-parser-stream')
 
 function person(csv) {
@@ -28,7 +27,7 @@ function person(csv) {
 
 fs.createReadStream("file.csv")
 .pipe(csv())
-.pipe(record(parser(), person))
+.pipe(record(person))
 .pipe(process.stdout);
 ```
 
