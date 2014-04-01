@@ -19,7 +19,7 @@ var fs = require('fs');
 var parser = require('csv-record-parser')
 var record = require('csv-record-parser-stream')
 
-function person(parser) {
+function person(csv) {
   return { 
     name: csv.col('name'),
     age: +csv.col('age')
