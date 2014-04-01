@@ -1,11 +1,13 @@
 
 var through = require('through');
+var recordParser = require('csv-record-parser');
 
 /**
  * through stream for csv-record-parser
  */
 
-module.exports = function(parser, parse){
+module.exports = function(parse, parser){
+  if (parser == null) parser = recordParser();
   var first = true;
 
   return through(function(row){

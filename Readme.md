@@ -32,6 +32,13 @@ fs.createReadStream("file.csv")
 .pipe(process.stdout);
 ```
 
+## API
+
+### exports(parser, [RecordParser])
+
+* `parser` - A parser function that takes a [RecordParser](https://github.com/jb55/csv-record-parser) instance
+* `RecordParser` (optional) - [RecordParser](https://github.com/jb55/csv-record-parser) instance
+
 
 ## License
 
