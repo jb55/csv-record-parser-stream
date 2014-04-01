@@ -1,0 +1,23 @@
+{
+  "name": "csv-record-parser-stream",
+  "description": "through stream for csv-record-parser",
+  "keywords": [],
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jb55/csv-record-parser-stream.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "dependencies": {
+    "through": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "csv-parse": "*",
+    "csv-record-parser": "*",
+    "better-assert": "*"
+  }
+}
