@@ -3,7 +3,7 @@
 
   through stream for [csv-record-parser](https://github.com/jb55/csv-record-parser)
 
-  [![Build Status](https://travis-ci.org/jb55/csv-record-parser-stream.png)](https://travis-ci.org/jb55/csv-record-parser-stream)
+  [![Build Status](https://travis-ci.org/jb55/csv-record-parser-stream.svg)](https://travis-ci.org/jb55/csv-record-parser-stream)
 
 ## Installation
 
