@@ -18,6 +18,8 @@ module.exports = function(parse, parser){
     }
 
     parser.row(row);
-    this.queue(parse(parser))
+    result = parse(parser)
+    if(!result) return;
+    this.queue(result)
   });
 }
